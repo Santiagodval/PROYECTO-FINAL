@@ -204,9 +204,9 @@ img{
 
 /* animaciones */
 
-.link1:hover,.link2:hover,.link3:hover,.link4:hover,.link5:hover{
+.header ul li:hover{
     margin-bottom: 1rem;
-    color: #6b6b6b;
+    color: #ff0000;
 }
 
 
