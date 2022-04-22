@@ -42,6 +42,7 @@ ul{
 .header ul li{
     padding: 2px;
     width: 100%;
+    transition: margin-bottom 0.5s, color 0.5s;
 }
 
 /* main links */
@@ -200,6 +201,13 @@ img{
     justify-self: center;
 }
 
+
+/* animaciones */
+
+.link1:hover,.link2:hover,.link3:hover,.link4:hover,.link5:hover{
+    margin-bottom: 1rem;
+    color: #6b6b6b;
+}
 
 
 @media (max-width: 500px){
