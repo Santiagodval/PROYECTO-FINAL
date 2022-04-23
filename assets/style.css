@@ -42,7 +42,7 @@ ul{
 .header ul li{
     padding: 2px;
     width: 100%;
-    transition: margin-bottom 0.5s, color 0.5s;
+    transition: transform 0.5s, color 0.5s;
 }
 
 /* main links */
@@ -164,6 +164,7 @@ footer img{
     text-align: center;
 }
 
+
 .contenidoConAside *:not(ul *, h3, h2){
     display: inline-block;
 
@@ -204,8 +205,14 @@ img{
 
 /* animaciones */
 
-.header ul li:hover{
-    margin-bottom: 1rem;
+a{
+    transition: transform 0.4s;
+}
+
+.header ul li:hover, .asideLinks a:hover{
+    transform:translateY(-0.2rem);
+}
+.header ul li a:hover{
     color: #ff0000;
 }
 
