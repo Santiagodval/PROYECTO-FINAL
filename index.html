@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+    <link rel="stylesheet" href="./assets/styleForBootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,14 +23,14 @@
 
 
 
-    <header class="header">
+    <header class="col-lg-12 row-cols-1">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light col-lg-12">
             <div class="container-fluid flex-row justify-content-between">
                 <a href="index.html" class="header__logo navbar-brand"><img src="./assets/img/d20 logo.png" width="100"
-                    height="100" alt="logo d20"></a>
-                <h1 class="header__nombrePagina animate__animated animate__backInDown">Blog de Umbia</h1>   
-                
+                        height="100" alt="logo d20"></a>
+                <h1 class="header__nombrePagina animate__animated animate__backInDown">Blog de Umbia</h1>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -48,13 +49,14 @@
 
 
     </header>
+    <br>
 
     <main>
 
         <!--presentación de artículos y división de los contenidos del blog por recomendados y sistemas de juego-->
-        <section class="mainLinks">
+        <!-- <section class="mainLinks">
 
-            <!--barra de navegación entre cada sistema-->
+            barra de navegación entre cada sistema
 
             <ul class="mainLinks__lista">
                 <li>
@@ -72,7 +74,7 @@
                 </li>
             </ul>
 
-            <!--simulación de slider-->
+            simulación de slider
 
             <a href="articulo.html" class="mainLinks__slider"> <img src="./assets/img/rise of the runelords.jpg"
                     alt="imagen de la campaña de el auje de los señores de las runas"> </a>
@@ -80,136 +82,173 @@
 
 
         </section>
-
-        <div id="carouselExampleCaptions" class="carousel slide col-lg-6" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/rise of the runelords.jpg" class="d-block w-100" alt="imagen de la campaña de el auje de los señores de las runas">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>El auje de los señores de las runas</h5>
-                  <p>Una aventura que comienza en el el pueblo de punta arena y ternmina en una pelea contra uno de los más grandes magos que existieron en la faz de golarion</p>
+     -->
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleCaptions" class="carousel slide col-lg-6 blackTextBorder " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/pat" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/rise of the runelords.jpg" class="d-block w-100"
+                            alt="imagen de la campaña de el auje de los señores de las runas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="">El auje de los señores de las runas</h5>
+                            <p class="">Una aventura que comienza en el el pueblo de punta arena y ternmina en una pelea
+                                contra uno de los más grandes magos que existieron en la faz de golarion</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/pathfinder2-beginnerbox.jpg" class="d-block w-100"
+                            alt="imagen de la caja de inicio de pathfinder segunda edicion">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pathfinder segunda edición</h5>
+                            <p>La caja de inicio de pathfinder segunda edición</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/piratas.jpg" class="d-block w-100"
+                            alt="imagen de ejemplo de barcos piratas en batalla">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>La sal de los dioses</h5>
+                            <p>Una campaña homebrew de piratas en busca de la llamada sal de los dioses</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </div>
+        <div class="d-flex justify-content-center">
 
-        <section class="textosIntervalentes">
+            <section class="textosIntervalentes col-lg-6">
 
-            <!--presentación en texto de mi persona y de cada juego y mi experiencia con cada uno-->
-            <article class="textosIntervalentes__textoIzquierda">
-                <h2>Acerca de mi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-            <article class="textosIntervalentes__textoDerecha">
-                <h2>Dungeons and dragos 5ta edición</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-            <article class="textosIntervalentes__textoIzquierda">
-                <h2>Pathfinder</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-            <article class="textosIntervalentes__textoDerecha">
-                <h2>Call of Cthulhu</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-            <article class="textosIntervalentes__textoIzquierda">
-                <h2>Otros juegos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-
-        </section>
-
-        <!--cartas con diferentes articulos-->
-
-        <section class="sectionTarjetas">
-            <h2 class="tituloTarjetas">Quizás te interese</h2>
-            <div class="containerTarjetas">
-                <article class="tarjeta">
-                    <a href="pages/articulo.html">
-                        <h3>Pathfinder: RotRL</h3>
-
-                        <img src="./assets/img/rise of the runelords 2.jpg" width="200"
-                            alt="imagen de el auje de los señores de las runas">
-                    </a>
+                <!--presentación en texto de mi persona y de cada juego y mi experiencia con cada uno-->
+                <article class="textosIntervalentes__textoIzquierda">
+                    <h2>Acerca de mi</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore
+                        voluptatibus
+                        incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
+                        eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae
+                        itaque
+                        sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
+                </article>
+                <article class="textosIntervalentes__textoDerecha">
+                    <h2>Dungeons and dragos 5ta edición</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore
+                        voluptatibus
+                        incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
+                        eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae
+                        itaque
+                        sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
+                </article>
+                <article class="textosIntervalentes__textoIzquierda">
+                    <h2>Pathfinder</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore
+                        voluptatibus
+                        incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
+                        eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae
+                        itaque
+                        sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
+                </article>
+                <article class="textosIntervalentes__textoDerecha">
+                    <h2>Call of Cthulhu</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore
+                        voluptatibus
+                        incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
+                        eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae
+                        itaque
+                        sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
+                </article>
+                <article class="textosIntervalentes__textoIzquierda">
+                    <h2>Otros juegos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore
+                        voluptatibus
+                        incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
+                        eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae
+                        itaque
+                        sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
                 </article>
 
+            </section>
 
-                <article class="tarjeta">
-                    <a href="pages/articulo.html">
-                        <h3>La sal de los dioses</h3>
-
-                        <img src="./assets/img/pirata de fantasia.jpg" width="200" height="258"
-                            alt="pirata de fantasía">
-                    </a>
-                </article>
+        </div>
 
 
-                <article class="tarjeta">
-                    <a href="pages/articulo.html">
-                        <h3>Pathfinder: RotRL</h3>
 
-                        <img src="./assets/img/rise of the runelords 2.jpg" width="200"
-                            alt="imagen de el auje de los señores de las runas">
-                    </a>
-                </article>
+        <!--cartas con diferentes articulos--> <h2 class="tituloTarjetas text-center">Quizás te interese</h2>
+        <div class="d-flex justify-content-center">
+           
+            <section class="sectionTarjetas card-group">
+                
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/rise of the runelords 2.jpg" width="200" class="card-img-top" alt="imagen de el auje de los señores de las runas">
+                    <div class="card-body">
+                      <h5 class="card-title">Pathfinder: RotRL</h5>
+                      <p class="card-text">Una aventura que comienza en punta arena</p>
+                      <a href="pages/articulo.html" class="btn btn-primary">Ir al articulo</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/pirata de fantasia.jpg" width="200" class="card-img-top" alt="imagen de el auje de los señores de las runas">
+                    <div class="card-body">
+                      <h5 class="card-title">La sal de los dioses</h5>
+                      <p class="card-text">Una aventura de piratas en busca de la sal de los dioses</p>
+                      <a href="pages/articulo.html" class="btn btn-primary">Ir al articulo</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/rise of the runelords 2.jpg" width="200" class="card-img-top" alt="imagen de el auje de los señores de las runas">
+                    <div class="card-body">
+                      <h5 class="card-title">Pathfinder: RotRL</h5>
+                      <p class="card-text">Una aventura que comienza en punta arena</p>
+                      <a href="pages/articulo.html" class="btn btn-primary">Ir al articulo</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/pirata de fantasia.jpg" width="200" class="card-img-top" alt="imagen de el auje de los señores de las runas">
+                    <div class="card-body">
+                      <h5 class="card-title">La sal de los dioses</h5>
+                      <p class="card-text">Una aventura de piratas en busca de la sal de los dioses</p>
+                      <a href="pages/articulo.html" class="btn btn-primary">Ir al articulo</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/rise of the runelords 2.jpg" width="200" class="card-img-top" alt="imagen de el auje de los señores de las runas">
+                    <div class="card-body">
+                      <h5 class="card-title">Pathfinder: RotRL</h5>
+                      <p class="card-text">Una aventura que comienza en punta arena</p>
+                      <a href="pages/articulo.html" class="btn btn-primary">Ir al articulo</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/pirata de fantasia.jpg" width="200" class="card-img-top" alt="imagen de el auje de los señores de las runas">
+                    <div class="card-body">
+                      <h5 class="card-title">La sal de los dioses</h5>
+                      <p class="card-text">Una aventura de piratas en busca de la sal de los dioses</p>
+                      <a href="pages/articulo.html" class="btn btn-primary">Ir al articulo</a>
+                    </div>
+                  </div>
 
 
-                <article class="tarjeta">
-                    <a href="pages/articulo.html">
-                        <h3>Pathfinder: RotRL</h3>
+            </section>
+        </div>
 
-                        <img src="./assets/img/rise of the runelords 2.jpg" width="200"
-                            alt="imagen de el auje de los señores de las runas">
-                    </a>
-                </article>
-            </div>
-
-
-        </section>
-
-
+        <div class="d-flex justify-content-center">
         <section>
             <form>
 
@@ -239,6 +278,8 @@
 
         </section>
 
+        </div>
+
         <!-- <footer>
             <div class="footer__item--limitedWidth">
                 <a href="pages/acercade.html">Acerca de</a>
@@ -258,26 +299,28 @@
                         alt="twitter"></a>
             </div>
         </footer> -->
-
-
+    
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-                <span class="text-muted">© 2022 Umbia y amigos, Inc</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" width="100"
-                    alt="instagram"></a></li>
-                <li class="ms-3"><a href="https://github.com/"><img src="./assets/img/github.png" width="100" alt="github"></a></li>
-                <li class="ms-3"> <a href="https://twitter.com/?lang=es"><img src="./assets/img/twitter.png" width="100"
-                    alt="twitter"></a></li>
-              </ul>
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <span class="text-muted">© 2022 Umbia y amigos, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a href="https://www.instagram.com/"><img src="./assets/img/instagram.png"
+                                width="100" alt="instagram"></a></li>
+                    <li class="ms-3"><a href="https://github.com/"><img src="./assets/img/github.png" width="100"
+                                alt="github"></a></li>
+                    <li class="ms-3"> <a href="https://twitter.com/?lang=es"><img src="./assets/img/twitter.png"
+                                width="100" alt="twitter"></a></li>
+                </ul>
             </footer>
-          </div>
+        </div>
 
 
         <!-- bootstrap -->
