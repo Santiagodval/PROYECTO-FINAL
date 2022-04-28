@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/402a69026f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,13 +26,27 @@
                 alt="logo d20"></a>
         <h1 class="header__nombrePagina animate__animated animate__backInDown">Blog de Umbia</h1>
 
-        <ul class="header__navegador">
+        <!-- <ul class="header__navegador">
             <li class=""><a href="pages/acercade.html">acerca de</a></li>
             <li class=""><a href="pages/juegos.html">juegos</a></li>
             <li class=""><a href="pages/articulo.html">diarios de campaña</a></li>
             <li class=""><a href="pages/contacto.html">contacto</a></li>
             <li class=""><a href="pages/newsletter.html">newsletter</a></li>
-        </ul>
+        </ul> -->
+
+    <nav class="responsive-navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="./pages/acercade.html" class="active" >Acerca de</a></li>
+                <li><a href="./pages/juegos.html">juegos</a></li>
+                <li><a href="./pages/articulo.html">diarios de campaña</a></li>
+                <li><a href="./pages/contacto.html">contacto</a></li>
+                <li><a href="./pages/newsletter.html">newsletter</a></li>
+            </ul>
+        </nav>
 
     </header>
 
@@ -40,25 +55,9 @@
         <!--presentación de artículos y división de los contenidos del blog por recomendados y sistemas de juego-->
         <section class="mainLinks">
 
-            <!--barra de navegación entre cada sistema-->
+            
 
-            <ul class="mainLinks__lista">
-                <li>
-                    <a href="juegos.html#callofcthulhu"> <img src="./assets/img/call of cthulhu logo.jpg" width="100"
-                            height="100" alt="logo call of cthulhu"> </a>
-                </li>
-                <li>
-                    <a href="juegos.html#DnD"> <img src="./assets/img/D&D logo.png" width="100" height="100"
-                            alt="logo DnD"> </a>
-                </li>
-                <li>
-                    <a href="juegos.html#pathfinder"> <img src="./assets/img/pathfinder logo.png" width="100"
-                            height="100" alt="pathfinder logo"></a>
-
-                </li>
-            </ul>
-
-            <!--simulación de slider-->
+            <!--slider-->
 
 
             <div>
@@ -114,6 +113,24 @@
                   </ul>
                 </div>
               </div>
+
+              <!--barra de navegación entre cada sistema-->
+
+            <ul class="mainLinks__lista">
+                <li>
+                    <a href="juegos.html#callofcthulhu"> <img src="./assets/img/call of cthulhu logo.jpg" width="100"
+                            height="100" alt="logo call of cthulhu"> </a>
+                </li>
+                <li>
+                    <a href="juegos.html#DnD"> <img src="./assets/img/D&D logo.png" width="100" height="100"
+                            alt="logo DnD"> </a>
+                </li>
+                <li>
+                    <a href="juegos.html#pathfinder"> <img src="./assets/img/pathfinder logo.png" width="100"
+                            height="100" alt="pathfinder logo"></a>
+
+                </li>
+            </ul>
 
 
 
