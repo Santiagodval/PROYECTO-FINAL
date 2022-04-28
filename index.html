@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Umbia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -60,8 +60,60 @@
 
             <!--simulación de slider-->
 
-            <a href="articulo.html" class="mainLinks__slider"> <img src="./assets/img/rise of the runelords.jpg"
-                    alt="imagen de la campaña de el auje de los señores de las runas"> </a>
+
+            <div>
+                <div class="carousel">
+                  <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="/assets/img/">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-3" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-2" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-1" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-3" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-2" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-1" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <div class="carousel-dots">
+                      <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                      <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                      <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                    </div>
+                  </ul>
+                </div>
+              </div>
 
 
 
