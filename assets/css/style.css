@@ -129,8 +129,8 @@ ul.slides input {
   display: none;
   position: absolute;
   padding: 0 20px;
-  opacity: 0;
-  transition: opacity .2s;
+  opacity: 1;
+  transition: font-size .2s,  text-shadow .2s;
   cursor: pointer;
 }
 
@@ -139,7 +139,8 @@ ul.slides input {
 }
 
 .carousel-controls label:hover {
-  opacity: 1;
+  font-size: larger;
+  text-shadow: #474747 1px 5px 1px;
 }
 
 .carousel-controls .prev-slide {

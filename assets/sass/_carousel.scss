@@ -93,8 +93,8 @@ ul.slides input {
     display: none;
     position: absolute;
     padding: 0 20px;
-    opacity: 0;
-    transition: opacity .2s;
+    opacity: 1;
+    transition: font-size .2s,  text-shadow .2s;
     cursor: pointer;
 }
 
@@ -103,7 +103,8 @@ ul.slides input {
 }
 
 .carousel-controls label:hover {
-    opacity: 1;
+    font-size: larger;
+    text-shadow: #474747 1px 5px 1px;
 }
 
 .carousel-controls .prev-slide {
@@ -155,6 +156,5 @@ input#img-5:checked ~ .carousel-dots label#img-dot-5,
 input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 	opacity: 1;
 }
-
 
 input:checked + .slide-container .nav label { display: block; }
