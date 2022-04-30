@@ -1,0 +1,16 @@
+form{
+
+    width: 350px;
+    justify-self: center;
+
+    fieldset{
+        padding: 1rem;
+        display: grid;
+
+        *{
+            margin: 0 0 1rem 0;
+            justify-self: center;
+        }
+    }
+
+}

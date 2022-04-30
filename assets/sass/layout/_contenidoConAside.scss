@@ -1,0 +1,22 @@
+.contenidoConAside{
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    main{
+
+        h2{
+            padding: 2rem;
+        }
+
+        .imagenTexto{
+            width: 200px;
+        }
+    }
+
+    @media (min-width: 500px) {
+        
+    }
+
+    
+}

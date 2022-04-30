@@ -1,0 +1,29 @@
+footer{
+    display: grid;
+    background-color: grey;
+    padding: 2rem;
+    margin-top: 3rem;
+
+    .footer__text{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .footer__links{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       a{
+            justify-self: center;
+       } 
+    }
+
+    @media(min-width:858px){
+        grid-template-columns: repeat(3,1fr);
+
+        .footer__links{
+            grid-column: 3;
+            align-items: center;
+        }
+    }
+
+}
