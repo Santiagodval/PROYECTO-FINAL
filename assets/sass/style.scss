@@ -12,9 +12,12 @@ body{
     display: grid;
 }
 
-@import "_carousel";
-@import "_header";
-@import "_footer";
-@import "_formularios";
-@import "_contenidoConAside";
-@import "_tarjetas";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/formularios";
+@import "layout/contenidoConAside";
+
+
+@import "components/tarjetas";
+@import "components/carousel";
