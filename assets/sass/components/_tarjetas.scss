@@ -3,11 +3,19 @@
 
     width: 100px;
 
+    border: 1px solid black;
+
     a{
         img{
             width: 100%;
         } 
     }
+
+    @media (min-width: 1100px){
+        width: 200px;
+    }
+
+    height: auto;
     
 }
 

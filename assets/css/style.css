@@ -53,6 +53,10 @@ nav ul li a {
   border-radius: 3px;
 }
 
+a {
+  transition: 0.5s;
+}
+
 a.active, a:hover {
   background: #c73636;
 }
@@ -87,7 +91,7 @@ a.active, a:hover {
   .checkbtn {
     display: flex;
   }
-  ul {
+  .header ul {
     margin-top: 3rem;
     position: fixed;
     z-index: 100;
@@ -99,11 +103,11 @@ a.active, a:hover {
     text-align: center;
     transition: all .5s;
   }
-  nav ul li {
+  .header nav ul li {
     display: flex;
     justify-content: center;
   }
-  nav ul li a {
+  .header nav ul li a {
     font-size: 20px;
   }
   header > a:hover, header > a.active {
@@ -164,6 +168,12 @@ form fieldset * {
 .contenidoConAside {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: top;
+}
+
+.contenidoConAside main {
+  display: grid;
+  justify-content: center;
 }
 
 .contenidoConAside main h2 {
@@ -181,13 +191,43 @@ form fieldset * {
   margin-top: 2rem;
 }
 
+@media (min-width: 700px) {
+  .contenidoConAside {
+    grid-template-columns: 1fr 3fr;
+  }
+  .contenidoConAside .asideLinks {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contenidoConAside main .imagenTexto {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .contenidoConAside {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .contenidoConAside main .imagenTexto {
+    width: 600px;
+  }
+}
+
 .tarjeta {
   text-align: center;
   width: 100px;
+  border: 1px solid black;
+  height: auto;
 }
 
 .tarjeta a img {
   width: 100%;
+}
+
+@media (min-width: 1100px) {
+  .tarjeta {
+    width: 200px;
+  }
 }
 
 .carousel {
@@ -270,6 +310,10 @@ ul.slides input {
   height: 100%;
 }
 
+.slide-image:hover + .carousel-controls label {
+  opacity: 0.5;
+}
+
 .carousel-controls {
   position: absolute;
   top: 0;
@@ -312,10 +356,6 @@ ul.slides input {
   opacity: 1;
   transition: font-size .2s,  text-shadow .2s;
   cursor: pointer;
-}
-
-.slide-image:hover + .carousel-controls label {
-  opacity: 0.5;
 }
 
 .carousel-controls label:hover {
