@@ -22,6 +22,7 @@ body {
   position: fixed;
   background-color: white;
   border-bottom: 1px solid black;
+  z-index: 1000;
 }
 
 .header img {
@@ -213,10 +214,34 @@ form fieldset * {
   }
 }
 
+.sectionTarjetas {
+  min-height: 500px;
+  background-image: url("../img/zD18bKX.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.sectionTarjetas .containerTarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 680px) {
+  .sectionTarjetas {
+    background-size: 150%;
+  }
+}
+
 .tarjeta {
   text-align: center;
+  margin: 2rem;
   width: 100px;
   border: 1px solid black;
+  padding: 2px;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.84);
+  transition: all 0.5s;
   height: auto;
 }
 
@@ -228,6 +253,11 @@ form fieldset * {
   .tarjeta {
     width: 200px;
   }
+}
+
+.tarjeta:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 8px 7px rgba(0, 0, 0, 0.84);
 }
 
 .carousel {

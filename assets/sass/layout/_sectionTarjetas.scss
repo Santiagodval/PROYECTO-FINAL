@@ -1,0 +1,20 @@
+.sectionTarjetas{
+   
+    min-height: 500px;
+    background-image: url("../img/zD18bKX.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    .containerTarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 680px) {
+
+        background-size: 150%;
+        
+    }
+    
+}
