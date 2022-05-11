@@ -2,31 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Umbia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-        <script src="https://kit.fontawesome.com/402a69026f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Umbia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/402a69026f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
 
-    <header class="header">
+  <header class="header">
 
-        <a href="index.html" class="header__logo"><img src="./assets/img/d20 logo.png" width="100" height="100"
-                alt="logo d20"></a>
-        <h1 class="header__nombrePagina animate__animated animate__backInDown">Blog de Umbia</h1>
+    <a href="index.html" class="header__logo"><img src="./assets/img/d20 logo.png" width="100" height="100"
+        alt="logo d20"></a>
+    <h1 class="header__nombrePagina animate__animated animate__backInDown">Blog de Umbia</h1>
 
-        <!-- <ul class="header__navegador">
+    <!-- <ul class="header__navegador">
             <li class=""><a href="pages/acercade.html">acerca de</a></li>
             <li class=""><a href="pages/juegos.html">juegos</a></li>
             <li class=""><a href="pages/articulo.html">diarios de campaña</a></li>
@@ -35,248 +35,236 @@
         </ul> -->
 
     <nav class="responsive-navbar">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="./pages/acercade.html" >Acerca de</a></li>
-                <li><a href="./pages/juegos.html">juegos</a></li>
-                <li><a href="./pages/articulo.html">diarios de campaña</a></li>
-                <li><a href="./pages/contacto.html">contacto</a></li>
-                <li><a href="./pages/newsletter.html">newsletter</a></li>
-            </ul>
-        </nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="./pages/acercade.html">Acerca de</a></li>
+        <li><a href="./pages/juegos.html">juegos</a></li>
+        <li><a href="./pages/articulo.html">diarios de campaña</a></li>
+        <li><a href="./pages/contacto.html">contacto</a></li>
+        <li><a href="./pages/newsletter.html">newsletter</a></li>
+      </ul>
+    </nav>
 
-    </header>
+  </header>
 
-    <div class="navBar-separator"></div>
+  <div class="navBar-separator"></div>
 
-    <main>
+  <main>
 
-        <!--presentación de artículos y división de los contenidos del blog por recomendados y sistemas de juego-->
-        <section class="mainLinks">
-
-            
-
-            <!--slider-->
+    <!--presentación de artículos y división de los contenidos del blog por recomendados y sistemas de juego-->
+    <section class="mainLinks">
 
 
-            <div>
-                <div class="carousel">
-                  <ul class="slides">
-                    <input type="radio" name="radio-buttons" id="img-1" checked />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="/assets/img/piratas.jpg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-3" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-2" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-                    <input type="radio" name="radio-buttons" id="img-2" />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="/assets/img/rise of the runelords.jpg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-1" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-3" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-                    <input type="radio" name="radio-buttons" id="img-3" />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="/assets/img/pathfinder2-beginnerbox.jpg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-2" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-1" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-                    <div class="carousel-dots">
-                      <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-                      <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-                      <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-                    </div>
-                  </ul>
-                </div>
+
+      <!--slider-->
+
+
+      <div>
+        <div class="carousel">
+          <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="/assets/img/piratas.jpg">
               </div>
-
-              <!--barra de navegación entre cada sistema-->
-            
-            <ul class="mainLinks__lista">
-                <li>
-                    <a href="juegos.html#callofcthulhu"> <img src="./assets/img/call of cthulhu logo.jpg" width="100"
-                            height="100" alt="logo call of cthulhu"> </a>
-                </li>
-                <li>
-                    <a href="juegos.html#DnD"> <img src="./assets/img/D&D logo.png" width="100" height="100"
-                            alt="logo DnD"> </a>
-                </li>
-                <li>
-                    <a href="juegos.html#pathfinder"> <img src="./assets/img/pathfinder logo.png" width="100"
-                            height="100" alt="pathfinder logo"></a>
-
-                </li>
-            </ul>
-
-
-
-        </section>
-
-        <section class="textosIntervalentes">
-
-            <!--presentación en texto de mi persona y de cada juego y mi experiencia con cada uno-->
-            <article class="textosIntervalentes__textoIzquierda">
-                <h2>Acerca de mi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-            <article class="textosIntervalentes__textoDerecha">
-                <h2>Dungeons and dragos 5ta edición</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-            <article class="textosIntervalentes__textoIzquierda">
-                <h2>Pathfinder</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-            <article class="textosIntervalentes__textoDerecha">
-                <h2>Call of Cthulhu</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-            <article class="textosIntervalentes__textoIzquierda">
-                <h2>Otros juegos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet officia labore voluptatibus
-                    incidunt maiores omnis reiciendis libero culpa nemo! Non, facilis. Reiciendis, sit commodi ipsa
-                    eaque iste aut velit corporis debitis tempora excepturi quia ratione, eius ipsam repudiandae itaque
-                    sed! Laudantium minus exercitationem error molestiae. Eos in voluptates minus.</p>
-            </article>
-
-        </section>
-
-        <!--cartas con diferentes articulos-->
-
-        <section class="sectionTarjetas">
-            <h2 class="tituloTarjetas">Quizás te interese</h2>
-            <div class="containerTarjetas">
-                <article class="tarjeta">
-                    <a href="pages/articulo.html">
-                        <h3>Pathfinder: RotRL</h3>
-
-                        <img src="./assets/img/rise of the runelords 2.jpg" 
-                            alt="imagen de el auje de los señores de las runas">
-                    </a>
-                </article>
-
-
-                <article class="tarjeta">
-                    <a href="pages/articulo.html">
-                        <h3>La sal de los dioses</h3>
-
-                        <img src="./assets/img/pirata de fantasia.jpg" 
-                            alt="pirata de fantasía">
-                    </a>
-                </article>
-
-
-                <article class="tarjeta">
-                    <a href="pages/articulo.html">
-                        <h3>Pathfinder: RotRL</h3>
-
-                        <img src="./assets/img/rise of the runelords 2.jpg" 
-                            alt="imagen de el auje de los señores de las runas">
-                    </a>
-                </article>
-
-
-                <article class="tarjeta">
-                    <a href="pages/articulo.html">
-                        <h3>Pathfinder: RotRL</h3>
-
-                        <img src="./assets/img/rise of the runelords 2.jpg" 
-                            alt="imagen de el auje de los señores de las runas">
-                    </a>
-                </article>
+              <div class="carousel-controls">
+                <label for="img-3" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-2" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="/assets/img/rise of the runelords.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-1" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-3" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="/assets/img/pathfinder2-beginnerbox.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-2" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-1" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <div class="carousel-dots">
+              <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+              <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+              <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
             </div>
+          </ul>
+        </div>
+      </div>
+
+      <!--barra de navegación entre cada sistema-->
+
+      <ul class="mainLinks__lista">
+        <li>
+          <a href="juegos.html#callofcthulhu"> <img src="./assets/img/call of cthulhu logo.jpg" width="100" height="100"
+              alt="logo call of cthulhu"> </a>
+        </li>
+        <li>
+          <a href="juegos.html#DnD"> <img src="./assets/img/D&D logo.png" width="100" height="100" alt="logo DnD"> </a>
+        </li>
+        <li>
+          <a href="juegos.html#pathfinder"> <img src="./assets/img/pathfinder logo.png" width="100" height="100"
+              alt="pathfinder logo"></a>
+
+        </li>
+      </ul>
 
 
-        </section>
+
+    </section>
+
+    <section class="textosIntervalentes">
+
+      <!--presentación en texto de mi persona y de cada juego y mi experiencia con cada uno-->
+      <article class="textosIntervalentes__textoIzquierda">
+        <h2>Acerca de mi</h2>
+        <p>Soy de Mar del plata, Argentina y juego a juegos de rol como pathfinder, 5ta edicion y call of cthulhu desde
+          los 15 años, también jugué a juegos de rol menos populares como uno de zombies que se inventó localmente</p>
+      </article>
+      <article class="textosIntervalentes__textoDerecha">
+        <h2>Dungeons and dragos 5ta edición</h2>
+        <p>Mi primera experiencia en 2015 con los juegos de rol fué con esta versión del juego de 
+          wizards of the coast.
+        </p>
+      </article>
+      <article class="textosIntervalentes__textoIzquierda">
+        <h2>Pathfinder</h2>
+        <p>Mi juego predilecto, es con el que más he jugado por cuestiones de amistades y de sus
+          preferencias, la verdad que me parece un sistema exelente a pesar de sus obvios problemas
+        </p>
+      </article>
+      <article class="textosIntervalentes__textoDerecha">
+        <h2>Call of Cthulhu</h2>
+        <p>Solo he estado como jugador una vez, el resto solo he mastereado el juego de rol del escritos
+          de new orleands, recomiendo seguir al canal de youtube de su creador, sandy petersen.
+        </p>
+      </article>
+      <article class="textosIntervalentes__textoIzquierda">
+        <h2>Otros juegos</h2>
+        <p>Hace poco empezamos con la beginner box de la segunda edición de pathfinder y también he jugado
+          a juegos locales creados en mar del plata como uno de zombies.
+        </p>
+      </article>
+
+    </section>
+
+    <!--cartas con diferentes articulos-->
+
+    <section class="sectionTarjetas">
+      <h2 class="tituloTarjetas">Quizás te interese</h2>
+      <div class="containerTarjetas">
+        <article class="tarjeta">
+          <a href="pages/articulo.html">
+            <h3>Pathfinder: RotRL</h3>
+
+            <img src="./assets/img/rise of the runelords 2.jpg" alt="imagen de el auje de los señores de las runas">
+          </a>
+        </article>
 
 
-        <section class="centrado">
-            <form>
+        <article class="tarjeta">
+          <a href="pages/articulo.html">
+            <h3>La sal de los dioses</h3>
 
-                <fieldset>
-                    <legend>Encuesta!</legend>
-                    <label for="edad">Edad</label>
-                    <input type="number" id="edad">
-                    <br>
-                    <label for="añosjugando">Años jugando a rol</label>
-                    <input type="number" id="añosjugando">
-                    <br>
-                    <label for="horas">Horas que juegas a la semana</label>
-                    <input type="number" id="horas">
-                    <br>
-                    <label for="sistema">Sistema de juego</label>
-                    <br>
-                    <label><input type="checkbox" id="cbox1" value="DnD5"> DnD 5ta edición</label><br>
-                    <label><input type="checkbox" id="cbox2" value="DnD35"> DnD 3.5</label><br>
-                    <label><input type="checkbox" id="cbox3" value="Pathfinder"> Pathfinder</label><br>
-                    <label><input type="checkbox" id="cbox4" value="Pathfinder2"> Pathfinder 2da edición</label><br>
-                    <label><input type="checkbox" id="cbox5" value="CallOfCthulhu"> Call of Cthulhu</label><br>
-                    <label><input type="checkbox" id="cbox6" value="Traveler"> Traveler</label><br>
-                    <input type="submit" value="enviar formulario" />
-                </fieldset>
+            <img src="./assets/img/pirata de fantasia.jpg" alt="pirata de fantasía">
+          </a>
+        </article>
 
-            </form>
 
-        </section>
+        <article class="tarjeta">
+          <a href="pages/articulo.html">
+            <h3>Pathfinder: RotRL</h3>
 
-        <footer>
-          <div class="footer__text">
-              <a href="acercade.html">Acerca de</a>
-              <br>
-              <br>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente neque, quam repudiandae animi ab
-                  repellendus sed, reiciendis ea quis reprehenderit hic ipsum provident iusto voluptatem officiis unde
-                  voluptatum beatae exercitationem.
-              </p>
-          </div>
-  
-          <div class="footer__links">
-              <a href="https://www.instagram.com/" class="footer__image1"><img src="../assets/img/instagram.png" width="100"
-                      alt="instagram"></a>
-              <a href="https://github.com/" class="footer__image2"><img src="../assets/img/github.png" width="100" alt="github"></a>
-              <a href="https://twitter.com/?lang=es" class="footer__image3"><img src="../assets/img/twitter.png" width="100"
-                      alt="twitter"></a>
-          </div>
-      </footer>
-    </main>
+            <img src="./assets/img/rise of the runelords 2.jpg" alt="imagen de el auje de los señores de las runas">
+          </a>
+        </article>
+
+
+        <article class="tarjeta">
+          <a href="pages/articulo.html">
+            <h3>Pathfinder: RotRL</h3>
+
+            <img src="./assets/img/rise of the runelords 2.jpg" alt="imagen de el auje de los señores de las runas">
+          </a>
+        </article>
+      </div>
+
+
+    </section>
+
+
+    <section class="centrado">
+      <form>
+
+        <fieldset>
+          <legend>Encuesta!</legend>
+          <label for="edad">Edad</label>
+          <input type="number" id="edad">
+          <br>
+          <label for="añosjugando">Años jugando a rol</label>
+          <input type="number" id="añosjugando">
+          <br>
+          <label for="horas">Horas que juegas a la semana</label>
+          <input type="number" id="horas">
+          <br>
+          <label for="sistema">Sistema de juego</label>
+          <br>
+          <label><input type="checkbox" id="cbox1" value="DnD5"> DnD 5ta edición</label><br>
+          <label><input type="checkbox" id="cbox2" value="DnD35"> DnD 3.5</label><br>
+          <label><input type="checkbox" id="cbox3" value="Pathfinder"> Pathfinder</label><br>
+          <label><input type="checkbox" id="cbox4" value="Pathfinder2"> Pathfinder 2da edición</label><br>
+          <label><input type="checkbox" id="cbox5" value="CallOfCthulhu"> Call of Cthulhu</label><br>
+          <label><input type="checkbox" id="cbox6" value="Traveler"> Traveler</label><br>
+          <input type="submit" value="enviar formulario" />
+        </fieldset>
+
+      </form>
+
+    </section>
+
+    <footer>
+      <div class="footer__text">
+        <a href="acercade.html">Acerca de</a>
+        <br>
+        <br>
+        <p> Este es un blog hacerca de juegos de rol, pathfinder, d&d 5ta edicón y de otros juegos variados.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <a href="https://www.instagram.com/" class="footer__image1"><img src="../assets/img/instagram.png" width="100"
+            alt="instagram"></a>
+        <a href="https://github.com/" class="footer__image2"><img src="../assets/img/github.png" width="100"
+            alt="github"></a>
+        <a href="https://twitter.com/?lang=es" class="footer__image3"><img src="../assets/img/twitter.png" width="100"
+            alt="twitter"></a>
+      </div>
+    </footer>
+  </main>
 </body>
 
 </html>
