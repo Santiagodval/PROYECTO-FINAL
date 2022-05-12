@@ -18,16 +18,20 @@ ul.slides {
     overflow: hidden;
     list-style: none;
     @media screen and (min-width: 520px) {
-        height: 300px;
+       
+        @include tamanos(map-get($tamanosCarousel,primero),auto);
       }
       @media screen and (min-width: 800px) {
-        height: 400px;
+      
+        @include tamanos(map-get($tamanosCarousel,segundo),auto);
       }
       @media screen and (min-width: 1200px) {
-        height: 500px;
+       
+        @include tamanos(map-get($tamanosCarousel,tercero),auto);
       }
       @media screen and (min-width: 1500px) {
-        height: 600px;
+    
+        @include tamanos(map-get($tamanosCarousel,cuarto),auto);
       }  
     
 }
