@@ -7,7 +7,6 @@
 a {
   color: black;
   text-decoration: none;
-  /* no underline */
 }
 
 body {
@@ -36,29 +35,27 @@ body {
   align-content: center;
 }
 
-nav ul {
+.header nav ul {
   float: right;
   margin-right: 20px;
 }
 
-nav ul li {
+.header nav ul li, .header nav ul #check,
+.header nav ul .checkbtn {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
 
-nav ul li a {
+.header nav ul li a, .header nav ul #check a, .header nav ul .checkbtn a {
   font-size: 17px;
   text-transform: uppercase;
   padding: 7px 13px;
   border-radius: 3px;
-}
-
-a {
   transition: 0.5s;
 }
 
-a.active, a:hover {
+.header nav ul li a.active, .header nav ul #check a.active, .header nav ul .checkbtn a.active, .header nav ul li a:hover, .header nav ul #check a:hover, .header nav ul .checkbtn a:hover {
   background: #c73636;
 }
 
@@ -70,7 +67,8 @@ a.active, a:hover {
   cursor: pointer;
 }
 
-#check, .checkbtn {
+#check,
+.checkbtn {
   display: none;
 }
 
@@ -83,7 +81,7 @@ a.active, a:hover {
     font-size: 30px;
     padding-left: 50px;
   }
-  nav ul li a {
+  nav ul li a, nav ul #check a, nav ul .checkbtn a {
     font-size: 16px;
   }
 }
@@ -104,14 +102,16 @@ a.active, a:hover {
     text-align: center;
     transition: all .5s;
   }
-  .header nav ul li {
+  .header nav ul li, .header nav ul #check,
+  .header nav ul .checkbtn {
     display: flex;
     justify-content: center;
   }
-  .header nav ul li a {
+  .header nav ul li a, .header nav ul #check a, .header nav ul .checkbtn a {
     font-size: 20px;
   }
-  header > a:hover, header > a.active {
+  header > a:hover,
+  header > a.active {
     background: none;
     color: white;
   }
@@ -292,6 +292,7 @@ form fieldset * {
 
 @media (min-width: 1100px) {
   .tarjeta {
+    height: auto;
     width: 200px;
   }
 }
@@ -327,24 +328,28 @@ ul.slides {
 @media screen and (min-width: 520px) {
   ul.slides {
     height: 300px;
+    width: auto;
   }
 }
 
 @media screen and (min-width: 800px) {
   ul.slides {
     height: 400px;
+    width: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   ul.slides {
     height: 500px;
+    width: auto;
   }
 }
 
 @media screen and (min-width: 1500px) {
   ul.slides {
     height: 600px;
+    width: auto;
   }
 }
 
@@ -493,7 +498,8 @@ input:checked + .slide-container .nav label {
   justify-content: space-evenly;
 }
 
-.mainLinks__lista li {
+.mainLinks__lista li, .mainLinks__lista #check,
+.mainLinks__lista .checkbtn {
   list-style: none;
   padding: 1rem;
 }
